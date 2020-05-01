@@ -1,0 +1,71 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/></edmx:Reference>
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference Uri="../../../sap/zp_inf_posiciones_cds/$metadata"><edmx:Include Namespace="ZP_INF_POSICIONES_CDS" Alias="SAP"/></edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zp_inf_posiciones_cds_van.v1">
+			<Annotations Target="ZP_INF_POSICIONES_CDS.ZP_INF_POSICIONESResult/p_keydate"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZP_INF_POSICIONES_CDS.ZP_INF_POSICIONESResult/p_CyclePattern"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZP_INF_POSICIONES_CDS.ZP_INF_POSICIONESResult/ID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZP_INF_POSICIONES_CDS.ZP_INF_POSICIONESResult">
+				<Annotation Term="UI.HeaderInfo">
+					<Record><PropertyValue Property="TypeName" String="Informe"/><PropertyValue Property="TypeNamePlural" String="Informes"/></Record>
+				</Annotation>
+				<Annotation Term="UI.Identification">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="BankCountry"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="BankCountry"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="currency"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="bankname"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="planning_level"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="Account_Company"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="amount_pre"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER01"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER02"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER03"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER04"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER05"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER06"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER07"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER08"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER09"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER10"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER11"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER12"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER13"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER14"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER15"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER16"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER17"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER18"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER19"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER20"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER21"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER22"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER23"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER24"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER25"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER26"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER27"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER28"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER29"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER30"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER31"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PER32"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>BankCountry</PropertyPath>
+					</Collection>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
